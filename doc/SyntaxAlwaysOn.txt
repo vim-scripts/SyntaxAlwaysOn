@@ -1,0 +1,44 @@
+*SyntaxAlwaysOn.txt* fix the vim's "syntax off" bug
+
+File: SyntaxAlwaysOn.vim
+Version: 0.1
+Author: Hong Xu(xuphys AT gmail DOT com)
+Last Change: 3 May 2010
+Description: this plugin aims to fix the vim's "syntax off" bug -- sometimes
+vim makes syntax off unexpectedly. 
+License: You can redistribute this plugin and / or modify it under the terms 
+         of the GNU General Public License as published by the Free Software 
+         Foundation; either version 2, or any later version. 
+
+                                            *SyntaxAlwaysOn*
+Commands:
+    :TurnOnSyntaxAlwaysOn
+    Turn on this plugin. After this plugin is turned on, it cannot be turned
+    off.
+
+                                            *SyntaxAlwaysOn-settings*
+----------------------------------------------------------------------------
+                                            *g:TurnOnSyntaxAlwaysOn*
+Set g:TurnOnSyntaxAlwaysOn to zero in you vimrc if you don't want this plugin to be loaded.
+>
+    let g:TurnOnSyntaxAlwaysOn = 0
+<
+
+
+If you want this plugin to be loaded, set g:TurnOnSyntaxAlwaysOn to nonzero,
+such as 1.
+>
+    let g:TurnOnSyntaxAlwaysOn = 1
+<
+
+By default, the value of g:TurnOnSyntaxAlwaysOn is 1.
+
+
+----------------------------------------------------------------------------
+
+
+                                            *SyntaxAlwaysOn-installation*
+Download the SyntaxAlwaysOn.zip file and extract it to your vim runtime
+directory(~/.vim on linux and $VIM_INSTALLATION_FOLDER\vimfiles on windows).
+
+vim:ts=4:ft=help
